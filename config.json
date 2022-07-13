@@ -1,0 +1,9 @@
+{
+  "database": {
+    "host": "10.10.30.114",
+    "port": "5432",
+    "name": "wallet-db",
+    "password": "postgres",
+    "username": "postgres"
+  }
+}

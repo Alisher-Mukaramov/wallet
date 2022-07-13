@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "322072c5-7534-4147-ad5a-fa48be2b01d7",
+		"name": "wallet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8070/api/check-acc.get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-UserId",
+						"value": "2",
+						"type": "text"
+					},
+					{
+						"key": "X-Digest",
+						"value": "f341dcc5a0df9340245e3a2ca49dd0407bd2cf76a784fafebfaa71d7081c4303",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8070/api/check-acc.get",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"check-acc.get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8070/api/top-up.put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-UserId",
+						"value": "2",
+						"type": "text"
+					},
+					{
+						"key": "X-Digest",
+						"value": "f341dcc5a0df9340245e3a2ca49dd0407bd2cf76a784fafebfaa71d7081c4303",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 11.5,\n    \"currency\": \"TJS\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8070/api/top-up.put",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"top-up.put"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8070/api/transactions.get?from=2022-07-10&to=2022-07-12",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-UserId",
+						"value": "2",
+						"type": "text"
+					},
+					{
+						"key": "X-Digest",
+						"value": "f341dcc5a0df9340245e3a2ca49dd0407bd2cf76a784fafebfaa71d7081c4303",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8070/api/transactions.get?from=2022-07-10&to=2022-07-12",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"transactions.get"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2022-07-10"
+						},
+						{
+							"key": "to",
+							"value": "2022-07-12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8070/api/balance.get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-UserId",
+						"value": "2",
+						"type": "text"
+					},
+					{
+						"key": "X-Digest",
+						"value": "f341dcc5a0df9340245e3a2ca49dd0407bd2cf76a784fafebfaa71d7081c4303",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8070/api/balance.get",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"balance.get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
